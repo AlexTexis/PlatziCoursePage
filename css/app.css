@@ -89,6 +89,7 @@ nav a{
   text-decoration: none;
   font-size: .9em;
   transition: .3s ease;
+  font-weight: 600;
 }
 
 nav a:hover{
@@ -123,7 +124,19 @@ font-size: 2em;
 margin:0;
 grid-area:comments;
 padding: 0 1.2em;
-margin-bottom: .5em;
+margin-bottom: 1em;
+color: #68E4F9;
+text-decoration: none;
+}
+
+.fa-star{
+  color: #FECC01;
+  font-size: 1.2em;
+}
+
+
+.fa-star:last-child{
+  margin-right: .5em;
 }
 .course-description{
 margin:0;
@@ -153,6 +166,7 @@ grid-area:badge;
   display: block;
   font-size: 1.2em;
   margin-bottom: 1.2em;
+  font-weight: bold;
 }
 
 .course-form input{
@@ -180,18 +194,21 @@ grid-area:badge;
   display: grid;
   grid-template-columns: minmax(auto,1200px);
   justify-content: center;
+  padding: 1em;
 }
 
 .skills-container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: ". title ."
-                        "item1 item2 item3"
-                       "item4 item5 item6";
+  grid-template-columns:60px 1fr 60px 1fr 60px 1fr;
+  grid-template-areas:  ". . title title . ."
+                        "badge1 item1 badge2 item2 badge3 item3"
+                        "badge4 item4 badge5 item5 badge6 item6";
+grid-gap:.4em; 
 }
 
 .skill-title{
   grid-area: title;
+  padding: 0 .6em;
 }
 
 .skill-item{
@@ -200,9 +217,29 @@ align-items: center;
 font-size: .9em;
 }
 
+.badge-skill1{
+grid-area: badge1;
+}
+.badge-skill2{
+grid-area: badge2;
+}
+.badge-skill3{
+grid-area: badge3;
+}
+.badge-skill4{
+grid-area: badge4;
+}
+.badge-skill5{
+grid-area: badge5;
+}
+.badge-skill6{
+grid-area: badge6;
+}
+
+
 .skill-img{
   margin: 0;
-  max-width: 90px;
+  max-width: 60px;
 }
 
 .skill-img img{
@@ -219,7 +256,7 @@ grid-area: item2;
 grid-area: item3;
 }
 .item4{
-grid-area: item4;
+  grid-area: item4;
 }
 .item5{
 grid-area: item5;
