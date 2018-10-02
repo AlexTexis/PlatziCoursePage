@@ -4,26 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="icon" type="image/png" href="">
+  <link rel="icon" type="image/png" href="assets/logo.webp">
   <link rel="stylesheet" href="css/app.css">
   <title>Document</title>
 </head>
 <body>
   <header>
-    <div class="header-container">
-      <picture class="course-img"><img src="assets/badge.png" alt=""></picture>
-      <h1 class="course-tittle">Curso de React.Js</h1>
-      <h4 class="course-comments">Leer mas opiniones</h4>
-      <div class="course-description">Desarrolla tu propia página web con HTML5 y CSS3. Crea un sitio web para tu producto, personalízalo e 
-      inicia tu carrera para ser un Frontend profesional.
+      <picture class="header-logo"><img src="assets/logo.webp" alt=""></picture>
+      <div class="header-navigation">
+        <nav>
+          <ul>
+            <li><a href="">Cursos</a></li>
+            <li><a href="">Contactanos</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Agenda</a></li>
+            <li><a href="">Foro</a></li>
+          </ul>
+        </nav>  
+        <div class="header-form">
+          <button>Iniciar sesion</button>
+          <form class="header-form" action=""><input class="header-search" type="text" placeholder="Buscar en Platzi"></form>            
+        </div>
       </div>
-      <form action="">
+  </header>
+
+  <section class="course-banner">
+    <div class="section-container">
+      <picture class="course-img"><img src="assets/badge.png" alt=""></picture>
+      <h1 class="course-tittle">Curso de CSS Grid Layout</h1>
+      <h4 class="course-comments">Leer mas opiniones</h4>
+      <div class="course-description">React es una de las librerías más utilizadas hoy en día para crear aplicaciones web. En
+         este curso podrás dominar la creación de aplicaciones a través de un proyecto que
+         te ayudará a explotar todas las capacidades de esta librería.
+      </div>
+      <form class="course-form" action="">
         <label class="form-tittle">Registrate a platzi</label>
         <input type="text" placeholder="Nombre">
         <input type="text" placeholder="Correo Electronico">
         <button class="form-btn">Comienza ahora</button>
       </form>  
     </div>
-  </header>
+  </section>
+
+  <section class="skills">
+    <div class="skills-container">
+      <h2 class="skill-title">Con este curso podrás:</h2>
+      <div class="skill-item item1">
+        <picture class="skill-img"><img src="assets/icon.webp" alt=""></picture>
+        <p>Aplicar eficientemente propiedades para obtener layouts dinámicos</p>
+      </div>
+      <div class="skill-item item2">
+        <picture class="skill-img"><img src="assets/icon.webp" alt=""></picture>
+        <p>Mejorar tus interfaces responsive</p>
+      </div>
+      <div class="skill-item item3">
+        <picture class="skill-img"><img src="assets/icon.webp" alt=""></picture>
+        <p>Lograr el layout perfecto sin repetir código</p>
+      </div>
+      <div class="skill-item item4">
+        <picture class="skill-img"><img src="assets/icon.webp" alt=""></picture>
+        <p>Dominar el módulo de Grid Layout de CSS</p>
+      </div>
+      <div class="skill-item item5">
+        <picture class="skill-img"><img src="assets/icon.webp" alt=""></picture>
+        <p>Entender cuándo y cómo implementar CSS Grid</p>
+      </div>
+      <div class="skill-item item6">
+        <picture class="skill-img"><img src="assets/icon.webp" alt=""></picture>
+        <p>Organizar contenido con CSS Grid Layout</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>

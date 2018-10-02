@@ -8,6 +8,94 @@ body{
 }
 
 header{
+  background:linear-gradient(90deg,#1c3643,#273b47 25%,#1e5372);
+  padding: 0 .5em;
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-areas: "logo navigation";
+  height: 55px;
+}
+
+.header-logo{
+  height: inherit;
+width: 100px;
+margin: 0;
+grid-area: logo;
+}
+
+.header-logo img{
+  height: inherit;
+  max-width: 100%;
+  vertical-align: top;
+  object-fit: contain;
+}
+
+.header-navigation{
+
+  grid-area: navigation;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header-form{
+  display: inline-block;
+}
+
+.header-form button{
+  font-family: 'Montserrat',san-serif;
+  border: none;
+  color: #fff;
+  background-color: #95CA3E;
+  padding: .5em .8em;
+  border-radius: 4px;
+  margin: 0 .6em 0 0;
+  cursor: pointer;
+  outline: transparent;
+  transition: .3s ease;
+}
+
+.header-form button:active{
+  transform: scale(.9);
+}
+
+.header-search{
+  border:1px solid #fff;
+  padding: .5em .8em;
+  border-radius: 4px;
+  width: 250px;
+}
+
+nav ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav li{
+margin:0 .6em;
+list-style: none;
+}
+
+nav li:last-child:after{
+  content: "|";
+  color: #fff;
+  padding: 0 1em;
+}
+
+nav a{
+  color: #fff;
+  text-decoration: none;
+  font-size: .9em;
+  transition: .3s ease;
+}
+
+nav a:hover{
+  color: rgba(256,256,256,.5);
+}
+
+.course-banner{
 background-color:#223945;
 color: #fff;
 padding: 2.5em;
@@ -16,7 +104,7 @@ grid-template-columns: minmax(auto,1200px);
 justify-content: center;
 }
 
-.header-container{
+.section-container{
 display: grid;
 grid-template-columns: 70px 1fr 300px;
 grid-template-areas: "badge tittle form"
@@ -52,7 +140,7 @@ grid-area:badge;
   max-width: 100%;
 }
 
-form{
+.course-form{
   background-color: rgba(256,256,256,.9);
   padding: 1.5em;
   text-align: center;
@@ -67,7 +155,7 @@ form{
   margin-bottom: 1.2em;
 }
 
-form input{
+.course-form input{
   font-family: 'Montserrat',san-serif;
   display: block;
   border:none;
@@ -86,4 +174,56 @@ form input{
   box-shadow: inset 0 -.4em 0 rgba(0,0,0,.2);
   border-radius: 5px; 
   outline: transparent;
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: minmax(auto,1200px);
+  justify-content: center;
+}
+
+.skills-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". title ."
+                        "item1 item2 item3"
+                       "item4 item5 item6";
+}
+
+.skill-title{
+  grid-area: title;
+}
+
+.skill-item{
+display: flex;
+align-items: center;
+font-size: .9em;
+}
+
+.skill-img{
+  margin: 0;
+  max-width: 90px;
+}
+
+.skill-img img{
+  max-width: 100%;
+}
+
+.item1{
+  grid-area: item1;
+}
+.item2{
+grid-area: item2;
+}
+.item3{
+grid-area: item3;
+}
+.item4{
+grid-area: item4;
+}
+.item5{
+grid-area: item5;
+}
+.item6{
+grid-area: item6;
 }
