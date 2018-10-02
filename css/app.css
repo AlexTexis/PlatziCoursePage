@@ -1,0 +1,89 @@
+body{
+  font-family: 'Montserrat',san-serif;
+  margin:0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+header{
+background-color:#223945;
+color: #fff;
+padding: 2.5em;
+display: grid;
+grid-template-columns: minmax(auto,1200px);
+justify-content: center;
+}
+
+.header-container{
+display: grid;
+grid-template-columns: 70px 1fr 300px;
+grid-template-areas: "badge tittle form"
+                      ". comments form"
+                      ". description form"
+                      ". . form";
+}
+
+.course-tittle{
+margin:0;
+grid-area: tittle;
+padding:.1em .5em 0 .5em;
+font-size: 2em;
+}
+.course-comments{
+margin:0;
+grid-area:comments;
+padding: 0 1.2em;
+margin-bottom: .5em;
+}
+.course-description{
+margin:0;
+grid-area: description;
+padding: 0 1.2em;
+}
+.course-img{
+margin:0;
+max-width: 70px;
+grid-area:badge;
+}
+
+.course-img img{
+  max-width: 100%;
+}
+
+form{
+  background-color: rgba(256,256,256,.9);
+  padding: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  grid-area: form;
+}
+
+.form-tittle{
+  color: #111;
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 1.2em;
+}
+
+form input{
+  font-family: 'Montserrat',san-serif;
+  display: block;
+  border:none;
+  padding: .8em 1em;
+  width: 100%;
+  margin-bottom: 1.4em;
+  border-radius:4px;
+}
+
+.form-btn{
+  font-family: 'Montserrat',san-serif;
+  border:none;
+  color: #fff;
+  padding: .7em 2em 1em 2em;
+  background-color:#68E4F9;
+  box-shadow: inset 0 -.4em 0 rgba(0,0,0,.2);
+  border-radius: 5px; 
+  outline: transparent;
+}
