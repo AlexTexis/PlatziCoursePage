@@ -199,68 +199,22 @@ grid-area:badge;
 
 .skills-container{
   display: grid;
-  grid-template-columns:60px 1fr 60px 1fr 60px 1fr;
-  grid-template-areas:  ". . title title . ."
-                        "badge1 item1 badge2 item2 badge3 item3"
-                        "badge4 item4 badge5 item5 badge6 item6";
-grid-gap:.4em; 
+  grid-template-columns: 65px 1fr 65px 1fr 65px 1fr;
+  grid-gap:.6em; 
 }
 
 .skill-title{
-  grid-area: title;
-  padding: 0 .6em;
+  text-align: center;
 }
-
-.skill-item{
-display: flex;
-align-items: center;
-font-size: .9em;
-}
-
-.badge-skill1{
-grid-area: badge1;
-}
-.badge-skill2{
-grid-area: badge2;
-}
-.badge-skill3{
-grid-area: badge3;
-}
-.badge-skill4{
-grid-area: badge4;
-}
-.badge-skill5{
-grid-area: badge5;
-}
-.badge-skill6{
-grid-area: badge6;
-}
-
 
 .skill-img{
   margin: 0;
-  max-width: 60px;
+  max-width: 65px;
 }
 
 .skill-img img{
   max-width: 100%;
+  vertical-align:top;
 }
 
-.item1{
-  grid-area: item1;
-}
-.item2{
-grid-area: item2;
-}
-.item3{
-grid-area: item3;
-}
-.item4{
-  grid-area: item4;
-}
-.item5{
-grid-area: item5;
-}
-.item6{
-grid-area: item6;
-}
+
