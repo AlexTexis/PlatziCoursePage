@@ -12,7 +12,7 @@ header{
 	height: 55px;
 	background-color: #263C49;
 	display:grid;
-	grid-template-columns:150px 1fr 330px;
+	grid-template-columns:150px 1fr 350px;
 	grid-template-areas: "logo nav navTwo";
 	padding: 0 1em;
 }
