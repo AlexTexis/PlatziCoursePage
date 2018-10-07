@@ -205,3 +205,70 @@ padding: 0 5em 0 1.6em;
 .skill-img img{
 	max-width: 70px;
 }
+
+
+.clases{
+	background-color:#F8F8F9;
+	display: grid;
+	grid-template-columns: minmax(auto,1200px);
+	justify-content: center;
+	padding: 1em 0;
+}
+
+.clases-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-areas:"intro proyectos"
+											 "propiedades conclusions";
+grid-gap:1em; 
+}
+
+.clases h3{
+	margin:.8em 0;
+}
+.clases-tittle{
+	text-align: center
+}
+
+.introduction{
+	grid-area: intro;
+}
+.propertysCss{
+	grid-area: propiedades;
+}
+.proyectsCss{
+	grid-area:proyectos ;
+}
+.conclutions{
+	grid-area:conclusions; 
+}
+
+.clase-item{
+	background-color: #fff;
+	display: block;
+	padding: .8em;
+	border-radius: 4px;
+	border:1px solid transparent;
+	text-decoration: none;
+	color: #888;
+	margin: .3em 0;
+	display: flex;
+	align-items: center;
+}
+
+.clase-item:hover{
+border:1px solid #80B3FF;
+}
+
+.clase-img{
+	margin-right: 1em;
+	width: 25px;
+	height: 25px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	/*border:3px solid #888;*/
+	border-radius: 50%;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.3);
+	font-size: .8em;
+}
